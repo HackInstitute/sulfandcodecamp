@@ -14,33 +14,34 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/ionicons.min.css" rel="stylesheet">    
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/fontello.css" rel="stylesheet">
 
     <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
     <script type="text/javascript">
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
-    
+
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
                 zoom: 12,
-                
+
                 scrollwheel: false,
 
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(40.6700, -73.9400), // New York
 
-                // How you would like to style the map. 
+                // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
                 styles: [ {   featureType:'water',    stylers:[{color:'#03C9A9'},{visibility:'on'}] },{   featureType:'landscape',    stylers:[{color:'#f2f2f2'}] },{   featureType:'road',   stylers:[{saturation:-100},{lightness:45}]  },{   featureType:'road.highway',   stylers:[{visibility:'simplified'}] },{   featureType:'road.arterial',    elementType:'labels.icon',    stylers:[{visibility:'off'}]  },{   featureType:'administrative',   elementType:'labels.text.fill',   stylers:[{color:'#444444'}] },{   featureType:'transit',    stylers:[{visibility:'off'}]  },{   featureType:'poi',    stylers:[{visibility:'off'}]  }]
             };
 
-            // Get the HTML DOM element that will contain your map 
+            // Get the HTML DOM element that will contain your map
             // We are using a div with id="map" seen below in the <body>
             var mapElement = document.getElementById('map-contact');
 
@@ -67,6 +68,7 @@
       <h1 class="logo"><a href="index.html#home">Pen & Paper Hackathon</a></h1>
       <i class="ion-android-close menu-close"></i>
       <!--       <a href="#home" class="smoothScroll">Home</a> -->
+      <a href="#info" class="smoothScroll">Info</a>
       <a href="#speakers" class="smoothScroll">Speaker</a>
       <a href="#topics" class="smoothScroll">Themen</a>
       <a href="#purchase" class="smoothScroll">Anmeldung</a>
@@ -74,7 +76,7 @@
       <a href="#contact" class="smoothScroll">Venue</a>
       <a href="#contact" class="smoothScroll">Partner</a>
     </div>
-    
+
     <!-- Menu button -->
     <div id="menuToggle"><i class="ion-home"></i></div>
   </nav>
@@ -87,13 +89,13 @@
         <h1>Pen & Paper Hackathon</h1>
         <h5>10. Juni 2015 - Köln, Germany</h5>
         <h2>Der erste Pen & Paper Hackathon<br/>Verkehr, Mobilität und Stadtentwicklung</h2>
-        <p class="mt"><button class="btn btn-conf btn-green">Jetzt Anmelden</button><button class="btn btn-conf btn-clear">Mehr Informationen</button></p>
+        <p class="mt"><a class="btn btn-conf btn-clear smoothScroll" href="#purchase">Jetzt anmelden!</a><a class="btn btn-conf btn-clear smoothScroll" href="#info">Mehr Informationen</a></p>
       </div><!--/row -->
     </div><!--/container -->
    </div><!--/H -->
 
     <!-- ********** STAND OUT / CALL TO ACTION ********** -->
-    <section id="topics"></section>
+    <section id="info"></section>
     <div id="g">
       <div class="container">
         <div class="row">
@@ -124,14 +126,14 @@
             <div class="row">
               <div class="col-sm-3 mt">
                 <div class="circle-icon">
-                  <div class="icon ion-ios-clock-outline"></div>
+                  <div class="icon icon-ticket"></div>
                 </div>
               </div><!--/col-sm-4-->
               <div class="col-sm-9">
                 <h5>Jetzt kostenlos anmelden!</h5>
                 <h3>Limitiertes Ticketkontingent</h3>
                 <p>Es gibt ein limitiertes Kontingent an freien Tickets für die ersten Teilnehmer. First come, first serve.</p>
-                <p class="mt"><button class="btn btn-conf btn-clear">Jetzt anmelden!</button></p>
+                <p class="mt"><a class="btn btn-conf btn-clear smoothScroll" href="#purchase">Jetzt anmelden!</a></p>
               </div>
             </div><!--/row-->
           </div><!-- /col-sm-6-->
@@ -147,14 +149,14 @@
             <div class="row">
               <div class="col-sm-3 mt">
                 <div class="circle-icon">
-                  <div class="icon ion-ios-clock-outline"></div>
+                  <div class="icon icon-award"></div>
                 </div>
               </div><!--/col-sm-4-->
               <div class="col-sm-9">
                 <h5>Tolle Preise gewinnen!</h5>
                 <h3>Ein Abendessen mit den Vertretern der IHK und Stadt</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-                <p class="mt"><button class="btn btn-conf btn-clear">Jetzt anmelden!</button></p>
+                <p>Wie bieten für die Teilnehmer der besten Projekte die Chance die Speaker an einem extra Termin zu treffen um z.B. Ihnen Ideen zu pitchen... </p>
+                <p class="mt"><a class="btn btn-conf btn-clear smoothScroll" href="#purchase">Jetzt anmelden!</a></p>
               </div>
             </div><!--/row-->
           </div><!-- /col-sm-6-->
@@ -214,7 +216,7 @@
           <h6><tg>Manager Human Resources HRS</tg></h6>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
-      <!--/End Row of Speakers-->  
+      <!--/End Row of Speakers-->
       </div><!--/row-->
     </div><!--/container-->
 
@@ -226,22 +228,22 @@
           <h2 class="centered">Themen</h2>
           <hr class="aligncenter mb">
           <div class="col-md-4">
-            <tgr><i class="icon ion-ios-cloud-outline"></i></tgr>
+            <tgr><i class="icon icon-truck"></i></tgr>
             <h3 class="mb">Verkehr</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <p>Ob Privatverkehr mit dem Auto, (Lasten-) Fahrrad per Bus oder mit der Bahn - in der Stadt treffen mit dem Versorgungsverkehr die unterschiedlichsten Teilnehmer aufeinander. Nicht selten kommte es zu Staus.</p>
+            <p>Welche Möglichkeiten entwickelt eine moderne Stadt, um den Herausforderungen zu begegnen - wenn bald 1,2 Millionen Menschen in Köln leben...</p>
           </div><!--/col-md-4-->
           <div class="col-md-4">
-            <tgr><i class="icon ion-ios-infinite-outline"></i></tgr>
+            <tgr><i class="icon icon-road"></i></tgr>
             <h3 class="mb">Mobilität</h3>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p>Jeder möchte gerne mobil sein, um seinen Bedürfnissen nach zu gehen...</p>
+            <p>Ob das Auto bald als Nummer 1 der Verkehrsmittel vom Podest gestoßen wird hängt an den individuellen Bedürftinsse zb. dem Komfortwunsch ab. Wie sehen die unterschiedlichen Mobiliätswünsche aus, und wie können ihnen mit einem modernen Verkehrsmitteln begegnet werden.</p>
           </div><!--/col-md-4-->
           <div class="col-md-4">
-            <tgr><i class="icon ion-ios-pulse"></i></tgr>
+            <tgr><i class="icon icon-recycle"></i></tgr>
             <h3 class="mb">Stadtentwicklung</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <p>Die nächsten Jahre wird es in Köln einige Baustellen mehr geben, um das durch den Verkehr ermüdete Material zu erneuern.</p>
+            <p>Verkehr führt zu Abnutzung und auf dem Weg zu einer nachhaltige Stadt muss man sich z.B. auch Gedanken über Materialien machen, die dafür verwendet werden.</p>
           </div><!--/col-md-4-->
         </div>
       </div><!--/container-->
@@ -346,7 +348,7 @@
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
                 </div>
               </div>
-            </div>            
+            </div>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -361,7 +363,7 @@
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
                 </div>
               </div>
-            </div>            
+            </div>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -376,7 +378,7 @@
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
                 </div>
               </div>
-            </div>            
+            </div>
           </div><!--/Panel Group -->
         </div><!--/col-md-12-->
       </div><!--/row-->
@@ -419,16 +421,16 @@
         <div class="col-md-10 col-md-offset-1">
           <div class="row price-tag">
             <div class="col-sm-5 centered">
-              <h1>$0</h1>
-              <h5>No Show Rate</h5>
+              <h5>Unglaubliche</h5>
+              <h1>0 Euro</h1>
             </div>
             <div class="col-sm-7 centered">
-              <h4>NO SHOW RATE</h4>
+              <h4>Was du bekommst:</h4>
               <p>
                 Launch Included<br/>
                 Materials Included<br/>
                 Access to all areas<br/><br/>
-                <button class="btn btn-conf btn-green">Purchase</button>                
+                <button class="btn btn-conf btn-green">Purchase</button>
               </p>
             </div>
           </div><!--/price-tag-->
@@ -437,20 +439,20 @@
 
       <div class="row mt">
         <div class="col-md-3">
-          <h5><tgr>DO YOU ACCEPT PAYPAL?</tgr></h5>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration, by injected humour.</p>
+          <h5><tgr>Wer kann alles mit machen?</tgr></h5>
+          <p>Die Veranstaltung richtet sich an Designer, Entwickler und Architekten. Wenn du aber Ideen hast und gerne miterleben willst, wie Projekte zu Papier gepracht werden kannst du dich mit deinen Fähigkeiten einbringen.Die Teilnahme ist für alle Frauen und Männer offen.</p>
         </div>
         <div class="col-md-3">
-          <h5><tgr>CAN I CANCEL MY PURCHASE?</tgr></h5>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration, by injected humour.</p>
+          <h5><tgr>Muss ich mich dafür anmleden?</tgr></h5>
+          <p>Um besser planen zu können hilft uns die Anmeldung sehr! Falls du aber bedenken hast, deine Zusage in schriftlicher Form zu übermitteln, kannst du uns auf der Veranstaltung auch gerne anfrage, ob noch Plätze frei sind. </p>
         </div>
         <div class="col-md-3">
-          <h5><tgr>WHAT IS INCLUDED IN THE GOLD PASS?</tgr></h5>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration, by injected humour.</p>
+          <h5><tgr>Was passiert wenn ich mich abmelden will?</tgr></h5>
+          <p>Der Kartenanbieter bietet eine Möglichkeit das Ticket zu stornieren. Sonst schicke uns einfach eine Mail bei Problemen.</p>
         </div>
         <div class="col-md-3">
-          <h5><tgr>WHICH MATERIALS ARE INCLUDED?</tgr></h5>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration, by injected humour.</p>
+          <h5><tgr>Was muss ich mitbringen?</tgr></h5>
+          <p>Grundsätzlich sind beim einem Pen & Paper Hackathon alle Materialien vor Ort. Natürlich darfst du auch selbst welche mitbringen. Es ist auch nicht verboten ein Laptop oder Pad mitzubringen um die Ideen zu Papier zu bringen.</p>
         </div>
       </div>
     </div><!--/container-->
@@ -485,7 +487,7 @@
         <div class="row centered">
           <h2>Don't miss any news. Subscribe below to be updated.</h2>
           <div class="col-md-6 col-md-offset-3 mt">
-            <form role="form" action="register.php" method="post" enctype="plain"> 
+            <form role="form" action="register.php" method="post" enctype="plain">
               <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
               <button class='btn btn-conf btn-green' type="submit">Subscribe</button>
             </form>
@@ -498,19 +500,10 @@
                 <h3>Headquarters</h3>
                 <h5>
                   Some Avenue, 987<br/>
-                  New York<br/>
-                  United States.
+                  IHK<br/>
+                  Köln
                 </h5>
                 <h5>hello@landingsumo.com</h5>
-              </div>
-              <div class="col-sm-5">
-                <h3>Event Site</h3>
-                <h5>
-                  Main Avenue, 224<br/>
-                  San Francisco<br/>
-                  United States.
-                </h5>
-                <h5>event@landingsumo.com</h5>
               </div>
             </div>
           </div><!--/col-md-8-->
