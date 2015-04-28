@@ -19,37 +19,8 @@
     <link href="assets/css/fontello.css" rel="stylesheet">
 
     <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-    <script type="text/javascript">
-        // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 12,
-
-                scrollwheel: false,
-
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                // How you would like to style the map.
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [ {   featureType:'water',    stylers:[{color:'#03C9A9'},{visibility:'on'}] },{   featureType:'landscape',    stylers:[{color:'#f2f2f2'}] },{   featureType:'road',   stylers:[{saturation:-100},{lightness:45}]  },{   featureType:'road.highway',   stylers:[{visibility:'simplified'}] },{   featureType:'road.arterial',    elementType:'labels.icon',    stylers:[{visibility:'off'}]  },{   featureType:'administrative',   elementType:'labels.text.fill',   stylers:[{color:'#444444'}] },{   featureType:'transit',    stylers:[{visibility:'off'}]  },{   featureType:'poi',    stylers:[{visibility:'off'}]  }]
-            };
-
-            // Get the HTML DOM element that will contain your map
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('map-contact');
-
-            // Create the Google Map using out element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-    </script>
-
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
@@ -462,19 +433,19 @@
       <div class="container">
         <div class="row sponsor centered">
           <div class="col-sm-2 col-sm-offset-1">
-            <img src="assets/img/client1.png" alt="">
+            <img src="assets/img/ic-logo.png" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client3.png" alt="">
+            <img src="assets/img/HRS-min.png" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client2.png" alt="">
+            <img src="assets/img/logo_hackinstitute.png" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client4.png" alt="">
+            <img src="assets/img/railslove-black.png" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client5.png" alt="">
+            <img src="assets/img/Stadt_Koeln.png" alt="">
           </div>
         </div><!--/row-->
       </div><!--/container-->
@@ -497,13 +468,12 @@
           <div class="col-md-6 col-md-offset-3">
             <div class="row">
               <div class="col-sm-5 col-sm-offset-1">
-                <h3>Headquarters</h3>
+                <h3>Industrie- und Handelskammer zu Köln</h3>
                 <h5>
-                  Some Avenue, 987<br/>
-                  IHK<br/>
-                  Köln
+                  Unter Sachsenhausen 10-26<br/>
+                  50667 Köln
                 </h5>
-                <h5>hello@landingsumo.com</h5>
+                <h5>jan@hack.institute</h5>
               </div>
             </div>
           </div><!--/col-md-8-->
@@ -512,16 +482,16 @@
     </div><!--/F-->
 
     <!-- ********** MAP********** -->
-    <div id="map-contact"></div>
+    <div id="map"></div>
 
     <!-- ********** COPYRIGHT ********** -->
     <div id="copyright">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <h4>LANDING SUMO</h4>
+            <h4></h4>
           </div>
-          <div class="col-md-4">
+<!--           <div class="col-md-4">
             <p class="alignright">
               <a href="#"><i class="ion-social-twitter"></i></a>
               <a href="#"><i class="ion-social-instagram"></i></a>
@@ -529,7 +499,7 @@
               <a href="#"><i class="ion-social-dribbble"></i></a>
               <a href="#"><i class="ion-social-github"></i></a>
             </p>
-          </div>
+          </div> -->
         </div><!--/row-->
       </div><!--/container-->
     </div><!--/copyright-->
@@ -543,5 +513,55 @@
     <script src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/retina-1.1.0.js"></script>
+    <script type="text/javascript">
+
+
+      var Tiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '<a href="http://www.openstreetmap.org" target="_blank">Terms &amp; Feedback</a>'
+      });
+
+      var latitude = 50.942806, longitude = 6.951138, zoom_level = 15;
+
+      var map = L.map('map').addLayer(Tiles).setView([latitude, longitude], zoom_level);
+
+      //Add Points with geoJson:
+
+      var geojsonFeature = {
+          "type": "Feature",
+          "properties": {
+              "name": "IHK",
+              "popupContent": "IHK<br/>Unter Sachsenhausen 10-26<br/> 50667 Köln",
+          },
+          "geometry": {
+              "type": "Point",
+              "coordinates": [50.942806, 6.951138]
+          }
+      };
+
+      var geojsonMarkerOptions = {
+          radius: 8,
+          fillColor: "#ff7800",
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+      };
+
+      function onEachFeature(feature, layer) {
+          // does this feature have a property named popupContent?
+          if (feature.properties && feature.properties.popupContent) {
+              layer.bindPopup(feature.properties.popupContent);
+          }
+      }
+
+      L.geoJson(geojsonFeature, {
+          onEachFeature: onEachFeature,
+          pointToLayer: function (feature, latlng) {
+              return L.circleMarker([latitude, longitude], geojsonMarkerOptions);
+          }
+      }).addTo(map);
+
+    </script>
+
   </body>
 </html>
