@@ -396,7 +396,10 @@ input {
 }
 
 .flip {
-	background-image: url('../img/news-bg-flip.jpg');
+	background: url('../img/dirk-blauhut.jpg') no-repeat center right;
+	img{left:-50%;
+	top:-50%;
+}
 }
 
 .news .container {
