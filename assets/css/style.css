@@ -391,7 +391,7 @@ input {
 /* DIVIDED SECTION */
 .news {
 	background-position: center;
-	background-image: url('../img/news-bg.jpg');
+	background: url('../img/dr-ulrich-s-soenius.jpg') no-repeat center right;
 	background-size: cover;
 }
 
@@ -532,11 +532,20 @@ input {
 }
 
 /* SPONSORS */
+.sponsor {
+	margin-bottom: 50px;
+}
 
 .sponsor img {
 	max-width: 140px;
 	max-height: 60px;
 	vertical-align: middle;
+}
+
+.sponsor.big img {
+	max-width: 340px;
+	max-height: 160px;
+	vertical-align: middle;	
 }
 
 .sponsor .col-sm-2 {
