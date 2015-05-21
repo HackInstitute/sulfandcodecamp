@@ -396,10 +396,9 @@ input {
 }
 
 .flip {
-	background: url('../img/dirk-blauhut.jpg') no-repeat center right;
-	img{left:-50%;
-	top:-50%;
-}
+	background-position: center;
+	background: url('../img/ob_rathaus_dark.jpg') no-repeat top right;
+	background-size: cover;
 }
 
 .news .container {
@@ -465,13 +464,13 @@ input {
 
 /* TESTIMONIAL SECTION */
 .testimonials {
-	background-position: center;
+/*	background-position: center;
 	background-image: url('../img/testimonials.jpg');
-	background-size: cover;
+	background-size: cover;*/
 }
 
 .testimonials .container {
-	width: 100%
+	width: 100%;
 }
 
 .section-bg-grey {
