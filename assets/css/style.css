@@ -391,14 +391,15 @@ input {
 /* DIVIDED SECTION */
 .news {
 	background-position: center;
-	background: url('../img/niceaway_inside.jpg') no-repeat center right;
-	background-size: cover;
+	background: url('../img/niceaway_inside.jpg');
+	background-repeat: no-repeat;
+	background-size: 50%;
 }
 
 .flip {
 	background-position: center;
-	background: url('../img/niceaway_outside.jpg') no-repeat top right;
-	background-size: cover;
+	background: url('../img/niceaway_outside.jpg') no-repeat center right;
+	background-size: 50%;
 }
 
 .news .container {
