@@ -276,7 +276,7 @@ tg {
 }
 /*Text Green*/
 tgr {
-	color: #03C9A9;
+	color: #D9AF1B;
 }
 
 hr {
@@ -556,12 +556,12 @@ input {
 #f {
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background: #2f2f2f;
-	color: #f2f2f2;
+	background: #D9AF1B;
+	color: #5a5a5a;
 }
 
 #f h5 {
-	color: #b9b9b9;
+	color: #5a5a5a;
 	letter-spacing: 1px;
 }
 
@@ -577,7 +577,7 @@ input {
 #copyright {
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background: #010101;
+	background: #D9AF1B;
 	color: #f2f2f2;
 }
 
