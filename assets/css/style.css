@@ -350,7 +350,7 @@ input {
 /* HEADER SECTION */
 #h {
 	background: url(../img/surfandcode.jpg) no-repeat center top;
-	padding-top: 210px;
+	padding-top: 450px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -391,13 +391,13 @@ input {
 /* DIVIDED SECTION */
 .news {
 	background-position: center;
-	background: url('../img/dr-ulrich-s-soenius.jpg') no-repeat center right;
+	background: url('../img/niceaway_inside.jpg') no-repeat center right;
 	background-size: cover;
 }
 
 .flip {
 	background-position: center;
-	background: url('../img/ob_rathaus_dark.jpg') no-repeat top right;
+	background: url('../img/niceaway_outside.jpg') no-repeat top right;
 	background-size: cover;
 }
 
@@ -406,7 +406,7 @@ input {
 }
 
 .section-bg-color {
-	background-color: #03C9A9;
+	background-color: #D9AF1B;
 	height: 100%;
 	padding-top: 40px;
 	padding-bottom: 80px;
@@ -446,7 +446,7 @@ input {
 }
 
 .circle-icon .icon {
-	color: #03C9A9;
+	color: #D9AF1B;
 	line-height: 120px;
 	text-align: center;
 }
