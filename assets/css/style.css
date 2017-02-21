@@ -14,14 +14,14 @@
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
-* { 
+* {
 	margin: 0;
 	padding: 0px;
     font-family: 'Lato', sans-serif;
-} 
-body { 
-	background: #fff; 
-	margin: 0; 
+}
+body {
+	background: #fff;
+	margin: 0;
 	color: #5a5a5a;
 }
 
@@ -31,16 +31,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-p { 
-	padding: 0; 
-	margin-bottom: 12px; 
+p {
+	padding: 0;
+	margin-bottom: 12px;
     font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 16px; 
+	font-size: 16px;
 	line-height: 26px;
-	color: #666; 
+	color: #666;
 	margin-top: 10px;
-	letter-spacing: 0.7px; 
+	letter-spacing: 0.7px;
 }
 
 html,
@@ -90,10 +90,10 @@ body {
 	padding: 0;
 	margin: 0;
 }
-a { 
+a {
 	padding: 0;
 	margin: 0;
-	text-decoration: none; 
+	text-decoration: none;
 	-webkit-transition: background-color .4s linear, color .4s linear;
 	-moz-transition: background-color .4s linear, color .4s linear;
 	-o-transition: background-color .4s linear, color .4s linear;
@@ -178,7 +178,7 @@ a:focus {
 .menu a > i {
 	float: left;
 	display: inline-block;
-	vertical-align: middle; 
+	vertical-align: middle;
 	text-align: left;
 	width: 25px;
 	font-size: 16px;
@@ -349,7 +349,7 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header-cologne.jpg) no-repeat center top;
+	background: url(../img/surfandcode.jpg) no-repeat center top;
 	padding-top: 210px;
 	text-align:center;
 	background-attachment: relative;
@@ -357,7 +357,7 @@ input {
 	min-height: 700px;
 	width: 100%;
 	color: white;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -512,7 +512,7 @@ input {
 	padding-right: 25px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	color: white;	
+	color: white;
 	margin: 5px;
 }
 
@@ -544,7 +544,7 @@ input {
 .sponsor.big img {
 	max-width: 340px;
 	max-height: 160px;
-	vertical-align: middle;	
+	vertical-align: middle;
 }
 
 .sponsor .col-sm-2 {
