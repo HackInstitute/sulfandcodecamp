@@ -463,6 +463,13 @@ input {
 	background: #f2f2f2;
 }
 
+/* WHITE SECTION */
+#w {
+	padding-bottom: 60px;
+	padding-top: 60px;
+	background: #FFF;
+}
+
 /* TESTIMONIAL SECTION */
 .testimonials {
 /*	background-position: center;
