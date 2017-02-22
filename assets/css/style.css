@@ -369,6 +369,12 @@ input {
     background-size: cover;
 }
 
+#h.small {
+	min-height: 0px;
+	height: 100px;
+	padding-top: 100px;
+}
+
 #h h1 {
 	text-shadow: 2px 2px 4px #000000;
 	font-weight: 900;
@@ -386,6 +392,38 @@ input {
 	text-shadow: 2px 2px 4px #000000;
 	margin-top: 30px;
 	font-size: 35px;
+}
+
+/* HOSTEL SECTION */
+
+.hostel {
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hostel .first {
+	background: url(../img/th_IMG_2752.jpg) no-repeat center top;
+}
+
+.hostel .second {
+	background: url(../img/th_IMG_7909.jpg) no-repeat center top;
+}
+
+.hostel .third {
+	background: url(../img/th_IMG_7953.jpg) no-repeat center top;
 }
 
 /* DIVIDED SECTION */
@@ -472,12 +510,10 @@ input {
 
 /* TESTIMONIAL SECTION */
 .testimonials {
-/*	background-position: center;
-	background-image: url('../img/testimonials.jpg');
-	background-size: cover;*/
+	text-align:center;
 }
 
-.testimonials .container {
+.testimonials .container, .hostel .container {
 	width: 100%;
 }
 
