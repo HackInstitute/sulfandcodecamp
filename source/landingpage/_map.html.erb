@@ -1,0 +1,75 @@
+<!-- ********** FOOTER ********** -->
+<section id="contact"></section>
+<div id="f">
+  <div class="container">
+    <div class="row mt">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <h2>LOCATION:</h2>
+            <h3>NICE WAY HOSTELS CASCAIS</h3>
+            <h5>
+              Rua Conde Ferreira 117<br/>
+              2750-346 Cascais
+            </h5>
+            <h5>jan@hack.institute</h5>
+          </div>
+        </div>
+      </div><!--/col-md-8-->
+    </div><!--/row-->
+  </div><!--/container-->
+</div><!--/F-->
+<!-- ********** MAP********** -->
+<div id="map"></div>
+<script type="text/javascript">
+
+
+  var Tiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://www.openstreetmap.org" target="_blank">Terms &amp; Feedback</a>'
+  });
+
+  var latitude = 38.696139, longitude = -9.4243558, zoom_level = 15;
+
+  var map = L.map('map', {  scrollWheelZoom: false,
+                            touchZoom: false,
+                            dragging: false
+                          }).addLayer(Tiles).setView([latitude, longitude], zoom_level);
+
+  //Add Points with geoJson:
+
+  var geojsonFeature = {
+      "type": "Feature",
+      "properties": {
+          "name": "NICE WAY HOSTELS CASCAIS",
+          "popupContent": "NICE WAY HOSTELS CASCAIS<br/>Rua Conde Ferreira 117<br/> 2750-346 Cascais",
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [38.694549, -9.4243558]
+      }
+  };
+
+  var geojsonMarkerOptions = {
+      radius: 8,
+      fillColor: "#ff7800",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+  };
+
+  function onEachFeature(feature, layer) {
+      // does this feature have a property named popupContent?
+      if (feature.properties && feature.properties.popupContent) {
+          layer.bindPopup(feature.properties.popupContent);
+      }
+  }
+
+  L.geoJson(geojsonFeature, {
+      onEachFeature: onEachFeature,
+      pointToLayer: function (feature, latlng) {
+          return L.circleMarker([latitude, longitude], geojsonMarkerOptions);
+      }
+  }).addTo(map);
+
+</script>
