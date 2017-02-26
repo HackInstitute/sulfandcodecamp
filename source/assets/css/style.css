@@ -513,6 +513,12 @@ input {
 	text-align:center;
 }
 
+/* TESTIMONIAL SECTION */
+.partner {
+	color: #fff;
+	background-color: #000;
+}
+
 .testimonials .container, .hostel .container {
 	width: 100%;
 }
