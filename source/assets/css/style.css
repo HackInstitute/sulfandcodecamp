@@ -99,7 +99,7 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #1abc9c;
+	color: #D9AF1B;
 }
 a:hover,
 a:focus {
@@ -426,7 +426,7 @@ input {
 }
 
 .section-bg-color {
-	background-color: #D9AF1B;
+	background-color: #fff;
 	height: 100%;
 	padding-top: 40px;
 	padding-bottom: 80px;
@@ -435,7 +435,7 @@ input {
 .section-bg-color h3, .section-bg-color h1,.section-bg-color h5, .section-bg-color p {
 	margin-left: 25px;
 	margin-right: 25px;
-	color: white;
+	color: #5a5a5a;
 }
 
 .section-transparent {
@@ -504,8 +504,8 @@ input {
 
 /* TESTIMONIAL SECTION */
 .partner {
-	color: #fff;
-	background-color: #000;
+	color: #5a5a5a;
+	background-color: #fff;
 }
 
 .testimonials .container, .hostel .container {
@@ -515,14 +515,14 @@ input {
 .section-bg-grey {
 	background-color: #f2f2f2;
 	height: 100%;
-	padding-top: 180px;
-	padding-bottom: 180px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .section-bg-grey h3, .section-bg-grey h1,.section-bg-grey h5, .section-bg-grey p {
 	margin-left: 25px;
 	margin-right: 25px;
-	color: #5a5a5a;
+	color: ##5a5a5a;
 }
 
 /* PRICING TAG */
@@ -575,13 +575,13 @@ input {
 }
 
 .sponsor img {
-	max-width: 140px;
+	max-width: 200px;
 	max-height: 60px;
 	vertical-align: middle;
 }
 
 .sponsor.big img {
-	max-width: 340px;
+	max-width: 250px;
 	max-height: 160px;
 	vertical-align: middle;
 }
@@ -605,8 +605,8 @@ input {
 }
 
 #beach-end {
-	padding-top: 80px;
-	padding-bottom: 120px;
+	padding-top: 300px;
+	padding-bottom: 200px;
 	background: url(../img/footer.jpg) no-repeat center center;
 	background-size: cover;
 	color: #5a5a5a;
@@ -624,8 +624,8 @@ input {
 #copyright {
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background: #D9AF1B;
-	color: #f2f2f2;
+	background: #b5d0d0;
+	color: #D9AF1B;
 }
 
 #copyright h4 {
