@@ -309,7 +309,15 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/surfandcode.jpg) no-repeat center top;
+	background: url(../img/Header.jpg) no-repeat center top;
+	background-size: contain;
+	width: 100%;
+	height: 0;
+	padding-top: calc(0.6544 * 100vw);
+	text-align:center;
+	color: white;
+
+	/*
 	padding-top: 450px;
 	text-align:center;
 	background-attachment: relative;
@@ -318,17 +326,21 @@ input {
 	width: 100%;
 	color: white;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  */
 }
 
+.header-content {
+	margin-top: calc(((0.6544 * 100vw) * 0.4) * -1)
+}
 
 #h.small {
 	min-height: 0px;
@@ -459,7 +471,9 @@ input {
 #g {
 	padding-bottom: 60px;
 	padding-top: 60px;
-	background: #f2f2f2;
+	background: url(../img/body_bg.jpg) no-repeat center top;
+	background-size: contain;
+	height: calc(0.3968 * 100vw);
 }
 
 /* WHITE SECTION */
