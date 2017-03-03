@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	padding: 0;
-	margin-bottom: 12px;
+	margin-bottom: 20px;
     font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
@@ -116,7 +116,7 @@ a:focus {
 .menu {
 	right: -200px;
 	width: 100%;
-	height: 100px;
+	height: 0px;
 	top: 0;
 	z-index: 10;
 	text-align: right;
@@ -126,7 +126,6 @@ a:focus {
 .menu-wrap {
 	position: absolute;
 	top: 0;
-	background: #1a1a1a;
 	width: 100%;
 	height: 100px;
 }
@@ -139,12 +138,14 @@ a:focus {
 	line-height: 40px;
 	text-transform: uppercase;
 	color: #ffffff;
-	margin-top: 20px;
 	text-align: right;
+	float:left;
+	padding-left: 30px;
+
 }
 
 .menu h1.logo a:hover {
-	color: #03C9A9;
+	color: #00303a;
 }
 
 .menu img.logo {
@@ -154,10 +155,10 @@ a:focus {
 
 .menu a {
 	margin: 10px;
-	color: #808080;
+	color: #00303a;
 	font-size: 12px;
 	font-weight: 700;
-	line-height: 40px;
+	line-height: 60px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
