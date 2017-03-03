@@ -298,6 +298,11 @@ input {
 	color: white
 }
 
+.btn-dark {
+	color: black;
+	border: 2px solid black;
+}
+
 .btn-clear {
 	background: transparent;
 	color: white;
@@ -328,6 +333,20 @@ input {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#header-res {
+	background: url(../img/Header.jpg) no-repeat center top;
+	background-size: contain;
+	width: 100%;
+	height: 0;
+	padding-top: calc(0.6544 * 100vw);
+	text-align:center;
+	color: white;
+}
+
+.header-content {
+	margin-top: calc(((0.6544 * 100vw) * 0.4) * -1)
 }
 
 
@@ -463,6 +482,14 @@ input {
 	background: #f2f2f2;
 }
 
+#beach-begin {
+	padding-bottom: 60px;
+	padding-top: 80px;
+	background: url(../img/body_bg.jpg) no-repeat center top;
+	background-size: contain;
+	height: calc(0.3968 * 100vw);
+}
+
 /* WHITE SECTION */
 #w {
 	padding-bottom: 60px;
@@ -575,6 +602,14 @@ input {
 #f h5 {
 	color: #5a5a5a;
 	letter-spacing: 1px;
+}
+
+#beach-end {
+	padding-top: 80px;
+	padding-bottom: 120px;
+	background: url(../img/footer.jpg) no-repeat center center;
+	background-size: cover;
+	color: #5a5a5a;
 }
 
 /* MAP */
