@@ -637,3 +637,12 @@ input {
 	margin-right: 15px;
 }
 
+/* TUTORS */
+img.hi-claim {
+	transform: rotate(30deg);
+	padding-bottom: 40px;
+}
+
+.small-header {
+	padding-top: 170px;
+}
