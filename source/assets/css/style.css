@@ -112,121 +112,46 @@ a:focus {
 	margin: 0px;
 }
 
-/* MENU CONFIGURATION*/
-.menu {
-	right: -200px;
-	width: 100%;
-	height: 0px;
-	top: 0;
-	z-index: 10;
-	text-align: right;
+/*NAVIGATION*/
+.navbar-default {
+	background-color: rgba(255,255,255,0.8);
+	border-color: transparent;
 }
 
+/*
+@media (min-width: 768px) {
+	.navbar-default {
+		background-color: transparent;
+	}
+}
+*/
 
-.menu-wrap {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100px;
+.navbar-default .navbar-toggle {
+	border-color: #00303a;
 }
 
-.menu h1.logo a {
-	font-family: "Lato", sans-serif;
-	font-size: 16px;
-	font-weight: 900;
-	letter-spacing: 0.15em;
-	line-height: 40px;
-	text-transform: uppercase;
-	color: #ffffff;
-	text-align: right;
-	float:left;
-	padding-left: 30px;
-
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: white;
 }
 
-.menu h1.logo a:hover {
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #00303a;
+}
+
+.navbar-default .navbar-brand {
+	font-family: 'Lato', sans-serif;
 	color: #00303a;
 }
 
-.menu img.logo {
-	margin: 20px 0;
-	max-width: 160px;
-}
-
-.menu a {
-	margin: 10px;
-	color: #00303a;
-	font-size: 12px;
-	font-weight: 700;
-	line-height: 60px;
-	letter-spacing: 0.1em;
+.navbar-default .navbar-nav > li > a {
+	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
+	color: #00303a;
 }
 
-.menu a:hover {
-	color: #ffffff;
-}
-
-.menu a:active {
-	color: #ffffff;
-}
-
-.menu a > i {
-	float: left;
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left;
-	width: 25px;
-	font-size: 16px;
-	line-height: 40px;
-	margin: 25px 2px;
-}
-
-/* Push the body after clicking the menu button */
-.body-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
-}
-
-.menu,
-.body-push {
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-		-ms-transition: all .3s ease;
-		 -o-transition: all .3s ease;
-			transition: all .3s ease;
-}
-
-#menuToggle {
-	position: absolute;
-	top: 20px;
-	left: 0;
-	z-index: 11;
-	display: block;
-	text-align: center;
-	font-size: 14px;
-	color: #ffffff;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	cursor: pointer;
-	background: rgba(0,0,0,0.25);
-	-webkit-transition: all .1s ease-in-out;
-	   -moz-transition: all .1s ease-in-out;
-		-ms-transition: all .1s ease-in-out;
-		 -o-transition: all .1s ease-in-out;
-			transition: all .1s ease-in-out;
-}
-
-#menuToggle:hover {
-	color: #ffffff;
-	background: rgba(0,0,0,0.2);
-	-webkit-transition: all .1s ease-in-out;
-	   -moz-transition: all .1s ease-in-out;
-		-ms-transition: all .1s ease-in-out;
-		 -o-transition: all .1s ease-in-out;
-			transition: all .1s ease-in-out;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: white;
+	background-color: #00303a;
 }
 
 /*HELPERS*/
