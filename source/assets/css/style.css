@@ -63,7 +63,7 @@ body {
 }
 .centered {text-align: center}
 .mt {margin-top: 50px;}
-.mb {margin-bottom: 50px;}
+.mb {min-height: 75px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .ptb {padding-top: 60px; padding-bottom: 60px;}
@@ -150,6 +150,7 @@ nav .red {
 }
 
 .navbar-default .navbar-brand {
+	padding: 4px 0 0 15px;
 	font-family: 'Lato', sans-serif;
 	color: #00303a;
 	font-size: 16px;
@@ -172,7 +173,8 @@ nav .red {
 	background-color: #00303a;
 }
 .menu-logo{
-	width: 150px;
+	width: 210px;
+	height: 46px;
 }
 
 /*HELPERS*/
@@ -305,7 +307,6 @@ input {
 
 #h.small {
 	min-height: 0px;
-	height: 400px;
 	padding-top: 100px;
 }
 
