@@ -123,6 +123,10 @@ a:focus {
 	border-color: transparent;
 }
 
+nav .red {
+	background-color: #D61D7D;
+}
+
 @media (min-width: 768px) {
 	/*.navbar-default {
 		background-color: transparent;
