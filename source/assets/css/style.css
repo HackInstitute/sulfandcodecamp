@@ -118,13 +118,15 @@ a:focus {
 	border-color: transparent;
 }
 
-/*
 @media (min-width: 768px) {
-	.navbar-default {
+	/*.navbar-default {
 		background-color: transparent;
+	}*/
+	.nav > li > a {
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 }
-*/
 
 .navbar-default .navbar-toggle {
 	border-color: #00303a;
@@ -141,10 +143,17 @@ a:focus {
 .navbar-default .navbar-brand {
 	font-family: 'Lato', sans-serif;
 	color: #00303a;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #00303a;
 }
