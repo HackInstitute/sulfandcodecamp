@@ -26,8 +26,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 	font-weight: 300;
+}
+@media (max-width: 768px) {
+	.header-content h2 {
+		font-size: 20px;
+	}
 }
 
 
@@ -162,6 +167,9 @@ a:focus {
 	color: white;
 	background-color: #00303a;
 }
+.menu-logo{
+	width: 150px;
+}
 
 /*HELPERS*/
 
@@ -225,7 +233,13 @@ input {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	padding: 14px 28px 13px 28px;
+	margin-bottom: 5px;
 	}
+@media (max-width: 768px) {
+	.btn-conf {
+		display: none;
+	}
+}
 
 .btn-green {
 	background: #03C9A9;
@@ -282,6 +296,7 @@ input {
 .header-content {
 	margin-top: calc(((0.6544 * 100vw) * 0.4) * -1)
 }
+
 
 
 #h.small {
@@ -379,6 +394,12 @@ input {
 	padding-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+	.section-transparent{
+		display: none;
+	}
+}
+
 .section-transparent h3, .section-transparent h1, .section-transparent h6, .section-transparent p {
 	margin-left: 25px;
 	margin-right: 25px;
@@ -424,6 +445,13 @@ input {
 	height: calc(0.3968 * 100vw);
 }
 
+@media (max-width: 768px) {
+	#beach-begin {
+		height:auto;
+		background-size: cover;
+	}
+}
+
 /* WHITE SECTION */
 #w {
 	padding-bottom: 60px;
@@ -439,7 +467,7 @@ input {
 /* TESTIMONIAL SECTION */
 .partner {
 	color: #5a5a5a;
-	background-color: #fff;
+	padding-left: 20px;
 }
 
 .testimonials .container, .hostel .container {
@@ -553,6 +581,9 @@ input {
 	margin: 0;
 	height: 400px;
 }
+.partner-logo {
+	padding:10px;
+}
 
 /* COPYRIGHT */
 #copyright {
@@ -579,4 +610,10 @@ img.hi-claim {
 
 .small-header {
 	padding-top: 170px;
+}
+
+@media (max-width: 768px) {
+.small-header {
+	padding-top: 150px;
+	}
 }
