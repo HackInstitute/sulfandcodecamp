@@ -606,6 +606,12 @@ input {
 img.hi-claim {
 	transform: rotate(30deg);
 	padding-bottom: 40px;
+	float: right;
+}
+@media (max-width: 768px) {
+	img.hi-claim {
+		width: 100px;
+	}
 }
 
 .small-header {
