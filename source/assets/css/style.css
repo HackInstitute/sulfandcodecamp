@@ -150,6 +150,7 @@ nav .red {
 }
 
 .navbar-default .navbar-brand {
+	padding: 4px 0 0 15px;
 	font-family: 'Lato', sans-serif;
 	color: #00303a;
 	font-size: 16px;
@@ -172,7 +173,8 @@ nav .red {
 	background-color: #00303a;
 }
 .menu-logo{
-	width: 150px;
+	width: 210px;
+	height: 46px;
 }
 
 /*HELPERS*/
