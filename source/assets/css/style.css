@@ -124,7 +124,7 @@ a:focus {
 }
 
 nav .red {
-	background-color: #D61D7D;
+	background-color: #DC1C1C;
 }
 
 @media (min-width: 768px) {
@@ -273,7 +273,7 @@ input {
 }
 
 .btn-red {
-	background: #D61D7D;
+	background: #DC1C1C;
 	color: white;
 	border: 2px solid white;
 }
