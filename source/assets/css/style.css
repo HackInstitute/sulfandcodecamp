@@ -636,9 +636,26 @@ input {
 
 /* Newsletter */
 
-#mc_embed_signup .button {
-	background-color: #D9AF1B !important;
-	margin-top: 10px !important;
+#mc_embed_signup {
+	clear:left;
+	font:14px Helvetica,Arial,sans-serif;
+	width:100%;
+}
+
+#mc_embed_signup.landingpage {
+	background:#b5d0d0;
+}
+
+#mc_embed_signup.landingpage input{
+	background:#D9AF1B;
+}
+
+#mc_embed_signup.purchase {
+	background:transparent;
+}
+
+#mc_embed_signup.purchase input{
+	background:#DC1C1C;
 }
 
 /* TUTORS */
