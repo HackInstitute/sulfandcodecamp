@@ -124,7 +124,7 @@ a:focus {
 }
 
 nav .red {
-	background-color: #D61D7D;
+	background-color: #D9AF1B;
 }
 
 @media (min-width: 768px) {
@@ -242,8 +242,19 @@ input {
 	margin-bottom: 5px;
 	}
 @media (max-width: 768px) {
-	.btn-conf {
+	.btn-display {
 		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.btn-conf {
+		border-radius: 50px;
+		margin-right: 15px;
+		font-size: 8px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		padding: 10px 20px 10px 20px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -269,7 +280,7 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/surfandcode.jpg) no-repeat center top;
+	background: url(../img/surfandcode_small.jpg) no-repeat center top;
 	padding-top: 450px;
 	text-align:center;
 	background-attachment: relative;
@@ -307,7 +318,7 @@ input {
 
 #h.small {
 	min-height: 0px;
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 #h h1 {
@@ -605,6 +616,13 @@ input {
 #copyright i {
 	font-size: 25px;
 	margin-right: 15px;
+}
+
+/* Newsletter */
+
+#mc_embed_signup .button {
+	background-color: #D9AF1B !important;
+	margin-top: 10px !important;
 }
 
 /* TUTORS */
