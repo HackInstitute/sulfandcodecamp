@@ -168,6 +168,10 @@ nav .red {
 	color: #00303a;
 }
 
+.navbar-default .navbar-nav > li > a.red{
+	color: #fff;
+}
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: white;
 	background-color: #00303a;
@@ -262,7 +266,19 @@ input {
 	color: white;
 	border: 2px solid white;
 }
+
 .btn-clear:hover {
+	background: white;
+	color: #2f2f2f;
+}
+
+.btn-red {
+	background: #D61D7D;
+	color: white;
+	border: 2px solid white;
+}
+
+.btn-red:hover {
 	background: white;
 	color: #2f2f2f;
 }
