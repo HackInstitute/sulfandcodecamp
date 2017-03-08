@@ -687,3 +687,20 @@ img.hi-claim {
 	font-size: 16px;
 	line-height: 36px;
 }
+
+ul.what-you-get li:before {
+	content: '✔';   
+	margin-left: -1em; 
+	margin-right: .350em;
+}
+
+ul.what-you-get{ 
+	padding-left:20px;
+	text-indent:2px;
+	list-style: none;
+	list-style-position:outside;
+}
+
+.yellow {
+	color: #D9AF1B;
+}
